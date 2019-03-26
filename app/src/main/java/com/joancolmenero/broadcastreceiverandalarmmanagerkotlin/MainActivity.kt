@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 .getSystemService(Context.ALARM_SERVICE) as AlarmManager
             mAlarmManager!!.setRepeating(
                 AlarmManager.RTC_WAKEUP, System.currentTimeMillis(),
-                1000, mPendingIntent
+                60000, mPendingIntent
             )
         }
 
